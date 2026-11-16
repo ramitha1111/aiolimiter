@@ -30,6 +30,7 @@ jobs:
   analyze:
     name: Analyze (Python)
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       security-events: write  # required for all workflows; allow CodeQL to record security events
       packages: read  # required to fetch internal or private CodeQL packs
